@@ -4,11 +4,11 @@ import Navbar from '../Navbar/Navbar'
 
 function Header() {
   return (
-    <header className='hero'>
+    <header className='hero' id='home'>
       <section className='container'>
         <Navbar />
 
-        <div id='home' className='hero__home'>
+        <div className='hero__home'>
           <figure className='hero__picture'>
             <img src={img} alt="Img home" className='hero__img' />
           </figure>
