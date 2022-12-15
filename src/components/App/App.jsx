@@ -4,6 +4,7 @@ import '../../style/style.css'
 import Header from '../Header/Header'
 import About from '../About/About'
 import Skills from '../Skills/Skills'
+import Services from '../Services/Services'
 
 function App() {
   return (
@@ -11,6 +12,7 @@ function App() {
       <Header />
       <About />
       <Skills />
+      <Services />
     </div>
   )
 }
