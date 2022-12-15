@@ -3,6 +3,8 @@
 :root{
   --color-primary: #F2F2F2;
   --color-secundary: #F2A71B;
+  --color-terciary: #A6A197;
+  --color-hover: #008C72;
 }
 
 *{
@@ -159,15 +161,6 @@ body{
   font-size: 2.4rem;
   font-weight: 600;
   margin-bottom: 10px;
-  position: relative;
-}
-.title::before{
-  content: "";
-  position: absolute;
-  bottom: 0;
-  width: 100%;
-  height: 4px;
-  background-color: var(--color-secundary);
 }
 .about__paragraph{
   font-size: 1.4rem;
@@ -182,6 +175,8 @@ body{
 .skills{
   width: 100%;
   max-height: 100%;
+  padding: 40px 0;
+  background-color: var(--color-primary);
 }
 .skills__content{
   padding: 40px 0;
@@ -219,4 +214,96 @@ body{
 .skills__name{
   font-size: 1.2rem;
   font-weight: 400;
+}
+
+
+/* ----TODO: SERVICES---- */
+
+.services{
+  width: 100%;
+  max-width: 100%;
+  background-color: var(--color-terciary);
+}
+.services__content{
+  padding: 40px 0;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+}
+.services__info{
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  justify-content: center;
+  margin-top: 40px;
+  gap: 40px;
+  padding: 10px;
+}
+
+
+.service{
+  width: 300px;
+  height: 300px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 40px;
+  background-color: var(--color-primary);
+  border-radius: 5px;
+  padding: 20px;
+  position: relative;
+  overflow: hidden;
+  clip-path: polygon(0 0, 0 0, 0 100%, 0% 100%);
+}
+.service:hover::before{
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 4px;
+  bottom: 0;
+  left: 0;
+  background-color: var(--color-hover);
+}
+.service:nth-child(1){
+  animation: leftright 1s ease forwards;
+}
+.service:nth-child(2) {
+  animation: leftright 1s 1s ease forwards;
+}
+.service:nth-child(3) {
+  animation: leftright 1s 2s ease forwards;
+}
+.service:nth-child(4) {
+  animation: leftright 1s ease forwards;
+}
+.service:nth-child(5) {
+  animation: leftright 1s 1s ease forwards;
+}
+.service:nth-child(6) {
+  animation: leftright 1s 2s ease forwards;
+}
+@keyframes leftright {
+  to{
+    clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+  }
+}
+
+.service__img{
+  width: 60px;
+  height: 60px;
+  display: inline-block;
+}
+.service__texts{
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  height: 200px;
+}
+.service__title{
+  font-size: 1.4rem;
+}
+.service__paragraph{
+  font-size: 1.2rem;
 }

@@ -1,4 +1,4 @@
-import React from 'react'
+import React, {useState, useEffect} from 'react'
 import Service from './Service'
 import tag from '../../assets/icons/bx-code-alt.svg'
 import like from '../../assets/icons/bxs-like.svg'
@@ -45,11 +45,29 @@ function Services() {
       description: "I will optimize your site with intelligent search engine optimization strategy to generate leads.",
       img: ceo
     },
-  ]
-  return (
-    <section className='services'>
-      <div className="services__content container">
+  ];
 
+  const [service, setService] = useState()
+
+  const onLoad = () => {
+    setService(
+      info.map(e => (
+        <Service key={e.id} id={e.id} img={e.img} title={e.name} paragraph={e.description} />
+      ))
+    )
+  }
+
+  useEffect(() => {
+    onLoad();
+  },[])
+
+  return (
+    <section className='services' id='servicios'>
+      <div className="services__content container">
+        <h2 className='title title--margin'>Services</h2>
+        <div className='services__info'>
+          {service}
+        </div>
       </div>
     </section>
   )
