@@ -5,6 +5,7 @@ import Header from '../Header/Header'
 import About from '../About/About'
 import Skills from '../Skills/Skills'
 import Services from '../Services/Services'
+import Portfolio from '../Portfolio/Portfolio'
 
 function App() {
   return (
@@ -13,6 +14,7 @@ function App() {
       <About />
       <Skills />
       <Services />
+      <Portfolio />
     </div>
   )
 }

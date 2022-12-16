@@ -255,7 +255,6 @@ body{
   padding: 20px;
   position: relative;
   overflow: hidden;
-  clip-path: polygon(0 0, 0 0, 0 100%, 0% 100%);
 }
 .service:hover::before{
   content: "";
@@ -265,29 +264,6 @@ body{
   bottom: 0;
   left: 0;
   background-color: var(--color-hover);
-}
-.service:nth-child(1){
-  animation: leftright 1s ease forwards;
-}
-.service:nth-child(2) {
-  animation: leftright 1s 1s ease forwards;
-}
-.service:nth-child(3) {
-  animation: leftright 1s 2s ease forwards;
-}
-.service:nth-child(4) {
-  animation: leftright 1s ease forwards;
-}
-.service:nth-child(5) {
-  animation: leftright 1s 1s ease forwards;
-}
-.service:nth-child(6) {
-  animation: leftright 1s 2s ease forwards;
-}
-@keyframes leftright {
-  to{
-    clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
-  }
 }
 
 .service__img{
