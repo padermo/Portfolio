@@ -295,23 +295,39 @@ body{
 }
 .portfolio__content{
   padding: 40px 0;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.title--bottom{
+  margin-bottom: 40px;
+}
+.portfolio__info{
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  padding: 20px;
 }
 
-
 .proyect{
-  width: 450px;
+  width: 400px;
+  height: 300px;
   margin: 0 auto;
   display: flex;
   flex-direction: column;
   align-items: center;
   gap: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, .5);
+  background-color: var(--color-terciary);
+  border-radius: 10px;
 }
 .proyect__picture{
-  padding: 10px;
   position: relative;
-  width: 400px;
-  height: 300px;
-  background-color: var(--color-terciary);
+  padding: 10px;
+  width: 100%;
+  height: 100%;
 }
 .proyect__img{
   width: 100%;
@@ -334,7 +350,7 @@ body{
   opacity: 0;
 }
 .proyect__subtitle{
-  font-size: 1.6rem;
+  font-size: 1.8rem;
   font-weight: 500;
 }
 .proyect__links{
@@ -344,8 +360,11 @@ body{
 .proyect__link{
   color: #fff;
   text-decoration: none;
-  font-size: 1.2rem;
-  font-weight: 300;
+  font-size: 1.4rem;
+  font-weight: 400;
+}
+.proyect__subtitle, .proyect__link{
+  text-shadow: 0 0 6px rgba(0, 0, 0, .5);
 }
 .proyect__link:hover{
   text-decoration: underline;
@@ -353,6 +372,7 @@ body{
 .proyect:hover .proyect__data{
   opacity: 1;
   color: #fff;
+  border-radius: 10px;
   background: rgb(0,0,0);
   background: linear-gradient(90deg, rgba(0,0,0,0.4415967070421919) 0%, rgba(0,0,0,0.4948179955575981) 100%); 
 }
