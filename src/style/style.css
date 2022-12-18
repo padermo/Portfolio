@@ -499,3 +499,9 @@ body{
     gap: 15px 40px;
   }
 }
+
+@media screen and (max-width: 384px) {
+  .proyect__data{
+    width: 305.6px;
+  }
+}
