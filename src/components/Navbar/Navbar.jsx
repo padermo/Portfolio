@@ -8,7 +8,7 @@ function Navbar() {
         <img src={logo} alt="Img icon" className='nav__img' />
       </figure>
 
-      <div className='nav__links'>
+      <div className='nav__links' >
         <a href="#home" className='nav__link'>Home</a>
         <a href="#about" className='nav__link'>About</a>
         <a href="#skills" className='nav__link'>Skills</a>

@@ -6,6 +6,7 @@ function Proyect({img, name, github, demo}) {
       <figure className="proyect__picture">
         <img src={img} alt={`Img ${name}`} className="proyect__img" />
       </figure>
+      
       <div className="proyect__data">
         <h3 className="proyect__subtitle">{name}</h3>
         <div className="proyect__links">
