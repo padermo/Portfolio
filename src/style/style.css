@@ -435,3 +435,7 @@ body{
 .footer__link:hover{
   text-decoration: underline;
 }
+.title-size{
+  font-size: 1.4rem;
+  font-weight: 500;
+}

@@ -4,7 +4,7 @@ function Footer() {
   return (
     <section className='footer'>
       <div className="footer__content container">
-        <h2 className="title title--margin">Padermo.</h2>
+        <h2 className="title title--margin title-size">&copy; Padermo. All Rights Reserved</h2>
         <div className="footer__menu">
           <a href="#home" className="footer__link">Home</a>
           <a href="#about" className="footer__link">About</a>
