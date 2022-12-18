@@ -335,9 +335,9 @@ body{
   background-color: var(--color-terciary);
   border-radius: 10px;
   overflow: hidden;
+  position: relative;
 }
 .proyect__picture{
-  position: relative;
   padding: 10px;
   width: 100%;
   height: 100%;
