@@ -376,3 +376,31 @@ body{
   background: rgb(0,0,0);
   background: linear-gradient(90deg, rgba(0,0,0,0.4415967070421919) 0%, rgba(0,0,0,0.4948179955575981) 100%); 
 }
+
+
+/* ----TODO: CONTACT----- */
+.contact{
+  background-color: #000;
+  color: var(--color-primary);
+  width: 100%;
+  max-height: 100%;
+}
+.contact__content{
+  padding: 40px 0;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.contact__info{
+  width: 300px;
+  height: 100px;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+}
+.contact__icon{
+  display: block;
+  width: 80px;
+}
