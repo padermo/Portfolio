@@ -407,7 +407,7 @@ body{
 
 
 /* ----TODO: FOOTER---- */
-/* .footer{
+.footer{
   width: 100%;
   max-height: 100%;
   background-color: #000;
@@ -434,4 +434,4 @@ body{
 }
 .footer__link:hover{
   text-decoration: underline;
-} */
+}
