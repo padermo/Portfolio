@@ -500,8 +500,8 @@ body{
   }
 }
 
-@media screen and (max-width: 384px) {
+@media screen and (max-width: 360px) {
   .proyect__data{
-    width: 305.6px;
+    width: 284px;
   }
 }
