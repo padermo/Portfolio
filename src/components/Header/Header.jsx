@@ -1,6 +1,7 @@
 import React from 'react'
 import img from "../../assets/images/img_bg_blanco.png"
 import Navbar from '../Navbar/Navbar'
+import Cv from '../CV/Cv'
 
 function Header() {
   return (
@@ -19,6 +20,7 @@ function Header() {
             <h3 className='hero__subtitle'>Full Stack Developer</h3>
           </div>
         </div>
+        <Cv />
       </section>
     </header>
   )

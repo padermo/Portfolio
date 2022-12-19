@@ -458,6 +458,49 @@ body{
   font-weight: 500;
 }
 
+
+/* ----TODO: CV----- */
+.cv{
+  position: fixed;
+  right: 40px;
+  bottom: 20px;
+  z-index: 1000;
+}
+.cv__link{
+  cursor: pointer;
+  display: inline-block;
+  position: relative;
+  border: none;
+  border-radius: 10px;
+  color: #fff;
+  background-color: var(--color-secundary);
+  font-family: inherit;
+  font-size: 1.2rem;
+  font-weight: 400;
+  text-align: center;
+  text-decoration: none;
+  overflow: hidden;
+  padding: 13px 30px;
+}
+.cv__link--opacity::before{
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #fff;
+  opacity: .3;
+  clip-path: circle(0 at center);
+  transition: clip-path .3s;
+}
+.cv__link--opacity:hover::before{
+  clip-path: circle(100% at center);
+}
+
+
+
+
 @media screen and (max-width: 1024px) {
   .services__info{
     grid-template-columns: 1fr 1fr;
