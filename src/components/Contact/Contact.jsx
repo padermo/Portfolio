@@ -1,7 +1,8 @@
 import React, {useState, useEffect} from 'react'
 import github from '../../assets/icons/bxl-github.svg'
 import linkedin from '../../assets/icons/bxl-linkedin-square.svg'
-import instagram from '../../assets/icons/bxl-instagram.svg'
+import email from '../../assets/icons/bx-envelope.svg'
+import whatsapp from '../../assets/icons/bxl-whatsapp.svg'
 
 function Contact() {
 
@@ -18,8 +19,8 @@ function Contact() {
     },
     {
       id: 3,
-      img: instagram,
-      url: "https://www.instagram.com/padermoo/"
+      img: whatsapp,
+      url: "https://api.whatsapp.com/send?phone=573193517345"
     },
   ];
 
@@ -43,6 +44,7 @@ function Contact() {
         <h2 className="title title--bottom">Contact</h2>
         <div className="contact__info">
           {viewContact}
+          <a href="mailto:fabioaeh96@gmail.com" target="_blank" className='contact__social'><img src={email} alt="icon email" className='contact__icon' /></a>
         </div>
       </div>
     </section>

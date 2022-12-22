@@ -468,6 +468,7 @@ body{
 }
 .cv__link{
   cursor: pointer;
+  box-shadow: 0 0 10px rgba(0, 0, 0, .5);
   display: inline-block;
   position: relative;
   border: none;
