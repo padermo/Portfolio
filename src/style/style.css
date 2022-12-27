@@ -21,7 +21,6 @@ body{
 .hero{
   width: 100%;
   min-height: 100vh;
-  max-height: 100%;
   background-color: #000;
 }
 
@@ -35,10 +34,18 @@ body{
 .nav{
   width: 100%;
   height: 4em;
+  background-color: #000;
+  z-index: 1000;
+  padding: 10px 0 0 0;
+  position: fixed;
+  top: 0;
+  left: 0;
+}
+.nav__content{
   display: flex;
   justify-content: space-between;
   align-items: center;
-  margin-top: 20px;
+  padding: 0 40px;
 }
 
 .nav__picture{
@@ -91,10 +98,10 @@ body{
   cursor: pointer;
   display: none;
 }
-
 .hero__home{
   display: grid;
   width: 100%;
+  height: 100vh;
   margin: 20px 0;
   grid-template-columns: repeat(5, 1fr);
   grid-template-rows: repeat(4, 1fr);
@@ -163,7 +170,7 @@ body{
 }
 .about__content{
   display: flex;
-  padding: 40px 0;
+  padding: 80px 0;
   flex-direction: column;
   text-align: center;
   align-items: center;
@@ -191,7 +198,7 @@ body{
   background-color: var(--color-primary);
 }
 .skills__content{
-  padding: 40px 0;
+  padding: 80px 0;
   display: flex;
   flex-direction: column;
   text-align: center;
@@ -237,7 +244,7 @@ body{
   background-color: var(--color-primary);
 }
 .services__content{
-  padding: 40px 0;
+  padding: 80px 0;
   display: flex;
   flex-direction: column;
   text-align: center;
@@ -306,7 +313,7 @@ body{
   background-color: var(--color-primary);
 }
 .portfolio__content{
-  padding: 40px 0;
+  padding: 80px 0;
   text-align: center;
   display: flex;
   flex-direction: column;
@@ -404,7 +411,7 @@ body{
   max-height: 100%;
 }
 .contact__content{
-  padding: 40px 0;
+  padding: 80px 0;
   text-align: center;
   display: flex;
   flex-direction: column;
@@ -412,7 +419,7 @@ body{
   justify-content: center;
 }
 .contact__info{
-  width: 300px;
+  width: 350px;
   height: 100px;
   display: flex;
   align-items: center;
@@ -552,10 +559,28 @@ body{
   .nav{
     flex-direction: column;
     gap: 20px;
+    height: 100px;
+    position: initial;
+  }
+  .nav__picture{
+    display: none;
+  }
+  .nav__content{
+    padding: 10px 0 0 0;
   }
   .nav__links{
     display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 15px 40px;
+    grid-template-columns: repeat(2, 1fr);
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    gap: 0;
+  }
+  .nav__link{
+    display: block;
+    text-align: center;
+  }
+  .contact__icon{
+    width: 50px;
   }
 }
