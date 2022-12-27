@@ -9,7 +9,7 @@ function Footer() {
           <a href="#home" className="footer__link">Home</a>
           <a href="#about" className="footer__link">About</a>
           <a href="#skills" className="footer__link">Skills</a>
-          <a href="#servicios" className="footer__link">Services</a>
+          <a href="#services" className="footer__link">Services</a>
           <a href="#portfolio" className="footer__link">Portfolio</a>
           <a href="#contact" className="footer__link">Contact</a>
         </div>

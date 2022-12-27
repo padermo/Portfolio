@@ -62,7 +62,7 @@ function Services() {
   },[])
 
   return (
-    <section className='services' id='servicios'>
+    <section className='services' id='services'>
       <div className="services__content container">
         <h2 className='title title--margin'>Services</h2>
         <div className='services__info'>
