@@ -11,7 +11,7 @@ function Proyect({img, name, github, demo}) {
         <h3 className="proyect__subtitle">{name}</h3>
         <div className="proyect__links">
           <a href={github} className="proyect__link" target="_blank">GitHub</a>
-          <a href={demo} className="proyect__link" target="_blank">Demo</a>
+          {demo? <a href={demo} className="proyect__link" target="_blank">Demo</a> : ""}
         </div>
       </div>
     </div>

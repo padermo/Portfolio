@@ -8,6 +8,10 @@ import easybank from '../../assets/images/easybank.png'
 import fylo from '../../assets/images/fylo.png'
 import huddle from '../../assets/images/huddle.png'
 import devtools from '../../assets/images/devtools.png'
+import countries from '../../assets/images/countries.jpeg'
+import firebase from '../../assets/images/firebase.png'
+import formik from '../../assets/images/formik.png'
+import cloudinary from '../../assets/images/cloudinary.png'
 
 function Portfolio() {
   const data = [
@@ -66,6 +70,33 @@ function Portfolio() {
       img: devtools,
       github: "https://github.com/padermo/Devtools",
       demo: "https://devtools-eta.vercel.app/"
+    },
+    {
+      id: 9,
+      name: "Countries",
+      img: countries,
+      github: "https://github.com/padermo/CountriesApi",
+    },
+    {
+      id: 10,
+      name: "React Formik",
+      img: formik,
+      github: "https://github.com/padermo/FormReactFormik",
+      demo: "https://form-react-formik.vercel.app/"
+    },
+    {
+      id: 11,
+      name: "React Firebase",
+      img: firebase,
+      github: "https://github.com/padermo/ReactFirebase",
+      demo: "https://react-firebase-seven.vercel.app/login"
+    },
+    {
+      id: 12,
+      name: "React Cloudinary",
+      img: cloudinary,
+      github: "https://github.com/padermo/ReactCloudinary",
+      demo: "https://react-cloudinary-seven.vercel.app/"
     },
   ];
 
