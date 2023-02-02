@@ -12,6 +12,8 @@ import countries from '../../assets/images/countries.jpeg'
 import firebase from '../../assets/images/firebase.png'
 import formik from '../../assets/images/formik.png'
 import cloudinary from '../../assets/images/cloudinary.png'
+import rick from '../../assets/images/rick.png'
+import weather from '../../assets/images/weather.png'
 
 function Portfolio() {
   const data = [
@@ -97,6 +99,20 @@ function Portfolio() {
       img: cloudinary,
       github: "https://github.com/padermo/ReactCloudinary",
       demo: "https://react-cloudinary-seven.vercel.app/"
+    },
+    {
+      id: 13,
+      name: "Rick & Morty",
+      img: rick,
+      github: "https://github.com/padermo/RickAndMorty",
+      demo: "https://rick-and-morty-silk.vercel.app/"
+    },
+    {
+      id: 14,
+      name: "Weather",
+      img: weather,
+      github: "https://github.com/padermo/Weather",
+      demo: "https://weather-henna-five.vercel.app/"
     },
   ];
 
