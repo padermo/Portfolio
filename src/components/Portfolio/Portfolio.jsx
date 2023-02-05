@@ -14,6 +14,8 @@ import formik from '../../assets/images/formik.png'
 import cloudinary from '../../assets/images/cloudinary.png'
 import rick from '../../assets/images/rick.png'
 import weather from '../../assets/images/weather.png'
+import lazy from '../../assets/images/lazy.png'
+import movies from '../../assets/images/movies.png'
 
 function Portfolio() {
   const data = [
@@ -113,6 +115,20 @@ function Portfolio() {
       img: weather,
       github: "https://github.com/padermo/Weather",
       demo: "https://weather-henna-five.vercel.app/"
+    },
+    {
+      id: 15,
+      name: "Movies",
+      img: movies,
+      github: "https://github.com/padermo/Movies",
+      demo: "https://movies-eight-mu.vercel.app/"
+    },
+    {
+      id: 16,
+      name: "Lazy loadin & skeleton",
+      img: lazy,
+      github: "https://github.com/padermo/LazySkeleton",
+      demo: "https://lazy-skeleton.vercel.app/"
     },
   ];
 
