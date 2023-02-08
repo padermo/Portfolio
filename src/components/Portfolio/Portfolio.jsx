@@ -72,8 +72,8 @@ function Portfolio() {
       id: 8,
       name: "DevTools",
       img: devtools,
-      github: "https://github.com/padermo/Devtools",
-      demo: "https://devtools-eta.vercel.app/"
+      github: "https://github.com/padermo/DevTools",
+      demo: "https://dev-tools-nu.vercel.app/"
     },
     {
       id: 9,
