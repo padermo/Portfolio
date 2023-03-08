@@ -1,0 +1,9 @@
+@use '../variables/functions';
+
+.about{
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  gap: 10px;
+  text-align: center;
+}

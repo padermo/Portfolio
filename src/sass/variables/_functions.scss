@@ -1,0 +1,12 @@
+@use "sass:map";
+@use "variables";
+
+@function color($color) {
+  @return map.get(variables.$palette, $color);
+};
+
+@mixin layaout($display, $align, $justify) {
+  display: $display;
+  justify-content: $justify;
+  align-items: $align;
+};

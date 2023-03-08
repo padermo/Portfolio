@@ -1,0 +1,25 @@
+@use '../variables/functions';
+
+.skills{
+  @include functions.layaout(flex, center, center);
+  flex-direction: column;
+  text-align: center;
+  gap: 10px;
+
+  &__data{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    justify-content: center;
+  }
+}
+.skill{
+  @include functions.layaout(flex, center, center);
+  border: transparent;
+  border-radius: 10px;
+  box-shadow: 2px 2px functions.color('cream');
+  background-color: functions.color('orange-cream');
+  width: 120px;
+  height: 25px;
+  cursor: default;
+}

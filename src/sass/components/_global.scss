@@ -1,0 +1,19 @@
+@use '../variables/functions';
+
+body{
+  font-family: 'Poppins', sans-serif;
+  color: functions.color('gray');
+}
+.title{
+  font-size: 2rem;
+  color: functions.color('cream');
+
+  &::after{
+    content: "";
+    display: block;
+    width: 100%;
+    height: 3px;
+    border-radius: 10px;
+    background-color: functions.color('orange-cream');
+  }
+}
