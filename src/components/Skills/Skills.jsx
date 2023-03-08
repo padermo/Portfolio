@@ -26,7 +26,7 @@ function Skills() {
   }, []);
 
   return (
-    <section id="skills" className="skills">
+    <section className="skills">
       <h2 className="title">Skills</h2>
 
       <div className="skills__data">{skills}</div>

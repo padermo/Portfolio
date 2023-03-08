@@ -8,6 +8,7 @@
 
   &__container{
     width: 90%;
+    height: 80vh;
     margin: 0 auto;
     @include functions.layaout(flex, center, center);
   }
@@ -17,7 +18,6 @@
     @include functions.layaout(grid, center, center);
     grid-template-columns: repeat(3, 1fr);
     grid-template-rows: repeat(auto-fit);
-    outline: 1px solid red;
   }
 
   &__texts{
@@ -33,5 +33,12 @@
     gap: 20px;
     grid-column: 2/-1;
     grid-row: 1/-1;
+  }
+
+  &__title{
+    font-size: 2.4rem;
+  }
+  &__subtitle{
+    font-size: 1.6rem;
   }
 }

@@ -11,7 +11,6 @@ function Header() {
       <section className='hero__container'>
         <div className='hero__home'>
           <div className='hero__texts'>
-            <h3 className='hero__subtitle'>Hi!</h3>
             <h1 className='hero__title'>I'm Fabio Estevez</h1>
             <h3 className='hero__subtitle'>Full Stack Developer</h3>
           </div>
