@@ -159,4 +159,32 @@ body {
   z-index: 1;
 }
 
+.cv {
+  width: 70px;
+  height: 70px;
+  display: block;
+  background-color: #E7D7C6;
+  border-radius: 61% 39% 66% 34%/36% 60% 40% 64%;
+  position: fixed;
+  bottom: 10px;
+  right: 10px;
+  text-align: center;
+  display: grid;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 0 0 8px #E7D7C6;
+  color: #AF5F30;
+  text-decoration: none;
+  font-size: 1.2rem;
+  animation: show 1s infinite cubic-bezier(1, 1.51, 0, 1);
+}
+@keyframes show {
+  0% {
+    transform: scale(1);
+  }
+  100% {
+    transform: scale(1.1);
+  }
+}
+
 /*# sourceMappingURL=style.css.map */
