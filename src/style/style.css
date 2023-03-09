@@ -404,7 +404,6 @@ body::-webkit-scrollbar-thumb:hover {
   }
 }
 .contact {
-  width: 140px;
   height: 290px;
   position: fixed;
   bottom: 10px;
@@ -510,6 +509,10 @@ body::-webkit-scrollbar-thumb:hover {
 @media (max-width: 375px) {
   .contact {
     height: 240px;
+  }
+  .contact__cta--tooltip {
+    bottom: 20px;
+    left: 65px;
   }
   .contact__cta, .contact__social {
     width: 40px;
