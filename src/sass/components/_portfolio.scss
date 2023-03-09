@@ -5,6 +5,8 @@
   height: 100%;
   background-color: functions.color('gray-dark');
   padding: 20px 0 40px;
+  position: relative;
+  padding-bottom: 100px;
 
   &__content{
     width: 90%;
@@ -19,5 +21,20 @@
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
     gap: 20px;
     width: 100%;
+    padding-bottom: 40px;
+    z-index: 2;
+  }
+
+  &__wave{
+    position: absolute;
+    margin-top: 40px;
+    width: 100%;
+    bottom: 0;
+    background-color: transparent;
+    z-index: 1;
+
+    &--svg{
+      display: block;
+    }
   }
 }

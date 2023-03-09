@@ -1,5 +1,8 @@
 @use '../variables/functions';
 
+html{
+  scroll-behavior: smooth;
+}
 body{
   font-family: 'Poppins', sans-serif;
   color: functions.color('gray');
