@@ -18,6 +18,8 @@ function Skills() {
     "Sequelize",
     "Bootstrap",
     "Firebase",
+    "Jest",
+    "Figma",
   ];
   const [skills, setSkills] = useState();
 

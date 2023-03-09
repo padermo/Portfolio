@@ -1,8 +1,8 @@
 @use '../variables/functions';
 
 .proyect{
-  width: 320px;
-  height: 260px;
+  width: 280px;
+  height: 220px;
   overflow: hidden;
   position: relative;
   display: flex;
@@ -10,6 +10,7 @@
   margin: 0 auto;
   border-radius: 14px;
   box-shadow: 4px 4px functions.color('orange-cream');
+  border: 3px solid functions.color('orange-cream');
 
   &__picture{
     width: 100%;
@@ -71,5 +72,12 @@
     color: functions.color('gray');
     font-family: inherit;
     letter-spacing: 1px;
+  }
+}
+
+@media (max-width: 320px) {
+  .proyect{
+    width: 260px;
+    height: 200px;
   }
 }

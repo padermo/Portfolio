@@ -23,16 +23,16 @@ function Contact() {
 
     setViewData(
       <div className={viewHidde}>
-        <a href="https://github.com/padermo" target='_blank' rel="noreferrer" className="contact__social">
+        <a href="https://github.com/padermo" target='_blank' rel="noreferrer" className="contact__social contact__social--4">
           <img src={github} alt="icon github" className="contact__icon" />
         </a>
-        <a href="https://www.linkedin.com/in/fabio-andres-estevez-herrera/" target='_blank' rel="noreferrer" className="contact__social">
+        <a href="https://www.linkedin.com/in/fabio-andres-estevez-herrera/" target='_blank' rel="noreferrer" className="contact__social contact__social--3">
           <img src={linkedin} alt="icon linkedin" className="contact__icon" />
         </a>
-        <a href="https://wa.link/kin6ut" target='_blank' rel="noreferrer" className="contact__social">
+        <a href="https://wa.link/kin6ut" target='_blank' rel="noreferrer" className="contact__social contact__social--2">
           <img src={whatsapp} alt="icon whatsapp" className="contact__icon" />
         </a>
-        <a href="mailto:fabioaeh96@gmail.com" target='_blank' rel="noreferrer" className="contact__social">
+        <a href="mailto:fabioaeh96@gmail.com" target='_blank' rel="noreferrer" className="contact__social contact__social--1">
           <img src={email} alt="icon email" className="contact__icon" />
         </a>
       </div>
@@ -43,6 +43,7 @@ function Contact() {
     <section className="contact">
       {viewData}
       <button className="contact__cta" onClick={handleClick}>{text}</button>
+      <p className="contact__cta--tooltip">contact</p>
     </section>
   );
 }

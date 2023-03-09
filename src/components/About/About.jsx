@@ -5,11 +5,7 @@ function About() {
     <section className="about">
       <h2 className="title">About Me</h2>
       <p className="about__paragraph">
-        {" "}
-        Mi nombre es Fabio Andres Estevez Herrera, un programador apasionado por
-        el desarrollo y diseño web.
-        Soy una persona la cual le encantan los desafios y siempre tratare de
-        encontrar la mejor solucion posible.
+        I am a programmer who is passionate about software development, both web and design. I have carried out projects in which I have expressed my knowledge of code and code testing. I am in search of new challenges and constantly learning new knowledge.
       </p>
     </section>
   );

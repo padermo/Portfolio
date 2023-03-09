@@ -12,17 +12,22 @@
     width: 90%;
     height: 100%;
     margin: 0 auto;
-    @include functions.layaout(flex, center, space-between);
+    display: grid;
+    align-items: center;
+    grid-template-columns: repeat(3, 1fr);
   }
 
   &__title{
-    font-size: 2rem;
+    font-size: 1.4rem;
     color: functions.color('cream');
+    grid-column: 1/2;
   }
 
   &__menu{
     display: flex;
     gap: 10px;
+    grid-column: 3/-1;
+    justify-content: right;
   }
 
   &__link{
@@ -32,6 +37,25 @@
 
     &:hover{
       text-decoration: underline;
+    }
+  }
+}
+
+@media (max-width: 425px) {
+  .footer{
+    &__content{
+      grid-template-rows: repeat(2, 1fr);
+      gap: 10px;
+    }
+    &__title{
+      grid-column: 1/-1;
+      grid-row: 1/2;
+      text-align: center;
+    }
+    &__menu{
+      grid-column: 1/-1;
+      grid-row: 2/-1;
+      justify-content: center;
     }
   }
 }
