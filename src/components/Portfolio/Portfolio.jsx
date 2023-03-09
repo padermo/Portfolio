@@ -1,20 +1,20 @@
 import React, { useState, useEffect } from "react";
 import Proyect from "./Proyect";
-import galleryLight from "../../assets/images/gallerylightbox.png";
-import formAnimate from "../../assets/images/formanimate.png";
-import landingLight from "../../assets/images/landinglightbox.png";
-import menuClip from "../../assets/images/menuclippath.png";
-import easybank from "../../assets/images/easybank.png";
-import fylo from "../../assets/images/fylo.png";
-import huddle from "../../assets/images/huddle.png";
-import devtools from "../../assets/images/devtools.png";
-import countries from "../../assets/images/countries.jpeg";
-import formik from "../../assets/images/formik.png";
-import cloudinary from "../../assets/images/cloudinary.png";
-import rick from "../../assets/images/rick.png";
-import weather from "../../assets/images/weather.png";
-import lazy from "../../assets/images/lazy.png";
-import movies from "../../assets/images/movies.png";
+import galleryLight from "../../assets/images/gallerylightbox.webp";
+import formAnimate from "../../assets/images/formanimate.webp";
+import landingLight from "../../assets/images/landinglightbox.webp";
+import menuClip from "../../assets/images/menuclippath.webp";
+import easybank from "../../assets/images/easybank.webp";
+import fylo from "../../assets/images/fylo.webp";
+import huddle from "../../assets/images/huddle.webp";
+import devtools from "../../assets/images/devtools.webp";
+import countries from "../../assets/images/countries.webp";
+import formik from "../../assets/images/formik.webp";
+import cloudinary from "../../assets/images/cloudinary.webp";
+import rick from "../../assets/images/rick.webp";
+import weather from "../../assets/images/weather.webp";
+import lazy from "../../assets/images/lazy.webp";
+import movies from "../../assets/images/movies.webp";
 
 function Portfolio() {
   const data = [
