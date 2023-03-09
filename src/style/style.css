@@ -377,6 +377,7 @@ body::-webkit-scrollbar-thumb:hover {
   color: #DAD9D4;
   letter-spacing: 1.2px;
   text-shadow: 0 0 10px #000;
+  text-align: center;
 }
 .proyect__links {
   display: flex;
