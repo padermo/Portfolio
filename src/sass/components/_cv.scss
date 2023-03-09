@@ -16,6 +16,7 @@
   text-decoration: none;
   font-size: 1.2rem;
   animation: show 1s infinite cubic-bezier(1,1.51,0,1);
+  z-index: 3;
   
   @keyframes show {
     0%{

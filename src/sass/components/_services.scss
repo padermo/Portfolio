@@ -1,0 +1,55 @@
+@use '../variables/functions';
+
+.services{
+  width: 100%;
+  height: 100%;
+  background-color: functions.color('gray-dark');
+  padding: 20px 0 40px;
+
+  &__content{
+    width: 90%;
+    margin: 0 auto;
+    @include functions.layaout(flex, center, center);
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  &__info{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 10px;
+    width: 100%;
+  }
+}
+
+.service{
+  width: 220px;
+  height: 220px;
+  background-color: functions.color('orange-cream');
+  border-radius: 20px;
+  padding: 20px;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  text-align: center;
+  gap: 4px;
+  margin: 0 auto;
+  overflow: hidden;
+  cursor: default;
+
+  &__picture{
+    width: 40px;
+    height: 40px;
+  }
+
+  &__img{
+    width: 100%;
+    height: 100%;
+  }
+
+  &__texts{
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+  }
+}

@@ -12,6 +12,7 @@
   min-height: 100vh;
   max-height: 100%;
   background-color: #292B2E;
+  position: relative;
 }
 .hero__container {
   width: 90%;
@@ -51,6 +52,15 @@
 }
 .hero__subtitle {
   font-size: 1.6rem;
+}
+.hero__wave {
+  position: absolute;
+  width: 100%;
+  bottom: 0;
+  background-color: transparent;
+}
+.hero__wave--svg {
+  display: block;
 }
 
 body {
@@ -177,6 +187,7 @@ body {
   text-decoration: none;
   font-size: 1.2rem;
   animation: show 1s infinite cubic-bezier(1, 1.51, 0, 1);
+  z-index: 3;
 }
 @keyframes show {
   0% {
@@ -185,6 +196,57 @@ body {
   100% {
     transform: scale(1.1);
   }
+}
+
+.services {
+  width: 100%;
+  height: 100%;
+  background-color: #31363A;
+  padding: 20px 0 40px;
+}
+.services__content {
+  width: 90%;
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 20px;
+}
+.services__info {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 10px;
+  width: 100%;
+}
+
+.service {
+  width: 220px;
+  height: 220px;
+  background-color: #AF5F30;
+  border-radius: 20px;
+  padding: 20px;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  text-align: center;
+  gap: 4px;
+  margin: 0 auto;
+  overflow: hidden;
+  cursor: default;
+}
+.service__picture {
+  width: 40px;
+  height: 40px;
+}
+.service__img {
+  width: 100%;
+  height: 100%;
+}
+.service__texts {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
 }
 
 /*# sourceMappingURL=style.css.map */

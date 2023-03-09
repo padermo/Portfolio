@@ -5,6 +5,7 @@
   min-height: 100vh;
   max-height: 100%;
   background-color: functions.color('dark');
+  position: relative;
 
   &__container{
     width: 90%;
@@ -40,5 +41,16 @@
   }
   &__subtitle{
     font-size: 1.6rem;
+  }
+
+  &__wave{
+    position: absolute;
+    width: 100%;
+    bottom: 0;
+    background-color: transparent;
+
+    &--svg{
+      display: block;
+    }
   }
 }
