@@ -9,7 +9,6 @@ import fylo from '../../assets/images/fylo.png'
 import huddle from '../../assets/images/huddle.png'
 import devtools from '../../assets/images/devtools.png'
 import countries from '../../assets/images/countries.jpeg'
-import firebase from '../../assets/images/firebase.png'
 import formik from '../../assets/images/formik.png'
 import cloudinary from '../../assets/images/cloudinary.png'
 import rick from '../../assets/images/rick.png'
@@ -90,41 +89,34 @@ function Portfolio() {
     },
     {
       id: 11,
-      name: "React Firebase",
-      img: firebase,
-      github: "https://github.com/padermo/ReactFirebase",
-      demo: "https://react-firebase-seven.vercel.app/login"
-    },
-    {
-      id: 12,
       name: "React Cloudinary",
       img: cloudinary,
       github: "https://github.com/padermo/ReactCloudinary",
       demo: "https://react-cloudinary-seven.vercel.app/"
     },
     {
-      id: 13,
+      id: 12,
       name: "Rick & Morty",
       img: rick,
       github: "https://github.com/padermo/RickAndMorty",
       demo: "https://rick-and-morty-silk.vercel.app/"
     },
     {
-      id: 14,
+      id: 13,
       name: "Weather",
       img: weather,
       github: "https://github.com/padermo/Weather",
       demo: "https://weather-henna-five.vercel.app/"
     },
     {
-      id: 15,
+      id: 14,
       name: "Movies",
       img: movies,
       github: "https://github.com/padermo/Movies",
       demo: "https://movies-eight-mu.vercel.app/"
     },
     {
-      id: 16,
+      id: 15,
       name: "Lazy loadin & skeleton",
       img: lazy,
       github: "https://github.com/padermo/LazySkeleton",
@@ -148,8 +140,8 @@ function Portfolio() {
 
   return (
     <section className='portfolio' id='portfolio'>
-      <div className="portfolio__content container">
-        <h2 className="title title--bottom">Portfolio</h2>
+      <div className="portfolio__content">
+        <h2 className="title">Portfolio</h2>
         <div className="portfolio__info">
           {viewProyect}
         </div>

@@ -1,0 +1,23 @@
+@use '../variables/functions';
+
+.portfolio{
+  width: 100%;
+  height: 100%;
+  background-color: functions.color('gray-dark');
+  padding: 20px 0 40px;
+
+  &__content{
+    width: 90%;
+    margin: 0 auto;
+    @include functions.layaout(flex, center, center);
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  &__info{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;
+    width: 100%;
+  }
+}
