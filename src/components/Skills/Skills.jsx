@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from "react";
+import {useTranslation} from 'react-i18next';
 
 function Skills() {
   const datos = [
@@ -22,6 +23,7 @@ function Skills() {
     "Figma",
   ];
   const [skills, setSkills] = useState();
+  const [t] = useTranslation("global");
 
   useEffect(() => {
     setSkills(datos.map((e) => <p key={e} className="skill">{e}</p>));
@@ -29,7 +31,7 @@ function Skills() {
 
   return (
     <section className="skills">
-      <h2 className="title">Skills</h2>
+      <h2 className="title">{t("skills.title")}</h2>
 
       <div className="skills__data">{skills}</div>
     </section>

@@ -1,11 +1,13 @@
 import React from "react";
+import {useTranslation} from 'react-i18next';
 
 function About() {
+  const [t] = useTranslation("global");
   return (
     <section className="about">
-      <h2 className="title">About Me</h2>
+      <h2 className="title">{t("about.title")}</h2>
       <p className="about__paragraph">
-        I am a programmer who is passionate about software development, both web and design. I have carried out projects in which I have expressed my knowledge of code and code testing. I am in search of new challenges and constantly learning new knowledge.
+        {t("about.text")}
       </p>
     </section>
   );

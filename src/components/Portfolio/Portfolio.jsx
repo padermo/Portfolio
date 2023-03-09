@@ -15,8 +15,10 @@ import rick from "../../assets/images/rick.webp";
 import weather from "../../assets/images/weather.webp";
 import lazy from "../../assets/images/lazy.webp";
 import movies from "../../assets/images/movies.webp";
+import {useTranslation} from 'react-i18next';
 
 function Portfolio() {
+  const [t] = useTranslation("global");
   const data = [
     {
       id: 1,
@@ -147,7 +149,7 @@ function Portfolio() {
   return (
     <section className="portfolio" id="portfolio">
       <div className="portfolio__content">
-        <h2 className="title">Portfolio</h2>
+        <h2 className="title">{t("portfolio.title")}</h2>
         <div className="portfolio__info">{viewProyect}</div>
       </div>
       <div className="portfolio__wave">

@@ -1,0 +1,39 @@
+{
+  "navbar":{
+    "home": "Home",
+    "services": "Services",
+    "portfolio": "Portfolio"
+  },
+  "header":{
+    "title": "I'm Fabio Estevez",
+    "subtitle": "Full Stack Developer"
+  },
+  "about":{
+    "title": "About Me",
+    "text": "I am a programmer who is passionate about software development, both web and design. I have carried out projects in which I have expressed my knowledge of code and code testing. I am in search of new challenges and constantly learning new knowledge."
+  },
+  "skills":{
+    "title": "Skills"
+  },
+  "services":{
+    "title": "Services",
+    "subtitleOne": "Responsive Design",
+    "textOne": "Your site will display properly on any device, including desktop computers, tablets and mobile phone.",
+    "subtitleTwo": "Creative Design",
+    "textTwo": "A good and attractive web design helps you keep your leads on your site, witch is the digital face of your business.",
+    "subtitleThree": "Development",
+    "textThree": "I know the importance of web design and can help you create website you'll love.",
+    "subtitleFour": "Social Media",
+    "textFour": "There are a lot of social platforms out there, and you should promote your presence on them on your website.",
+    "subtitleFive": "Performance",
+    "textFive": "Retaining users is crucial to improving conversions. High-performing sites engage and retain users.",
+    "subtitleSix": "SEO",
+    "textSix": "I will optimize your site with intelligent search engine optimization strategy to generate leads."
+  },
+  "portfolio":{
+    "title": "Portfolio"
+  },
+  "contact":{
+    "title": "contact"
+  }
+}

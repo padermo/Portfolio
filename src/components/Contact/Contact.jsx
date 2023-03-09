@@ -5,8 +5,10 @@ import email from "../../assets/icons/bx-envelope.svg";
 import whatsapp from "../../assets/icons/bxl-whatsapp.svg";
 import up from "../../assets/icons/bx-chevron-up.svg";
 import down from "../../assets/icons/bx-chevron-down.svg";
+import {useTranslation} from 'react-i18next';
 
 function Contact() {
+  const [t] = useTranslation("global");
 
   const [viewData, setViewData] = useState();
   const [viewHidde, setViewHidde] = useState("contact__hidde");
@@ -43,7 +45,7 @@ function Contact() {
     <section className="contact">
       {viewData}
       <button className="contact__cta" onClick={handleClick}>{text}</button>
-      <p className="contact__cta--tooltip">contact</p>
+      <p className="contact__cta--tooltip">{t("contact.title")}</p>
     </section>
   );
 }

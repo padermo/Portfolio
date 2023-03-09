@@ -1,0 +1,68 @@
+@use "../variables/functions";
+
+.configurations{
+  z-index: 3;
+
+  &__options{
+    width: 50px;
+    height: 50px;
+    background-color: functions.color("cream");
+    border-radius: 61% 39% 66% 34% / 36% 60% 40% 64%;
+    position: fixed;
+    bottom: 75px;
+    right: 10px;
+    border: none;
+    text-align: center;
+    @include functions.layaout(grid, center, center);
+    box-shadow: 0 0 8px functions.color('cream-alpha');
+    color: functions.color("orange-cream");
+    text-decoration: none;
+    font-size: 1rem;
+    z-index: 3;
+    cursor: pointer;
+
+    &:hover &--img{
+      transform: rotate(90deg);
+      transition: transform 1s cubic-bezier(1,1.51,0,1);
+    }
+  }
+
+  &__menu--view{
+    bottom: 75px;
+    right: 80px;
+    position: fixed;
+    width: 100px;
+    height: 50px;
+    background-color: functions.color("cream");
+    border-radius: 10px;
+    box-shadow: 0 0 10px functions.color('cream-alpha');
+    @include functions.layaout(flex, center, center);
+  }
+
+  &__menu--hidden{
+    display: none;
+  }
+
+  &__change{
+    border: none;
+    padding: 6px 10px;
+    cursor: pointer;
+    
+    &--left{
+      border-radius: 10px 0 0 10px;
+    }
+
+    &--rigth{
+      border-radius: 0 10px 10px 0;
+    }
+
+    &--view{
+      background-color: functions.color("orange-cream");
+      color: functions.color('cream');
+    }
+    &--hidden{
+      background-color: functions.color("dark");
+      color: functions.color("gray");
+    }
+  }
+}

@@ -6,49 +6,45 @@ import time from "../../assets/icons/bx-timer.svg";
 import design from "../../assets/icons/bxs-palette.svg";
 import devices from "../../assets/icons/bxs-devices.svg";
 import ceo from "../../assets/icons/bx-target-lock.svg";
+import {useTranslation} from 'react-i18next';
 
 function Services() {
+  const [t] = useTranslation("global");
   const info = [
     {
       id: 1,
-      name: "Responsive Design",
-      description:
-        "Your site will display properly on any device, including desktop computers, tablets and mobile phone.",
+      name: t("services.subtitleOne"),
+      description:t("services.textOne"),
       img: devices,
     },
     {
       id: 2,
-      name: "Creative Design",
-      description:
-        "A good and attractive web design helps you keep your leads on your site, witch is the digital face of your business.",
+      name: t("services.subtitleTwo"),
+      description:t("services.textTwo"),
       img: design,
     },
     {
       id: 3,
-      name: "Development",
-      description:
-        "I know the importance of web design and can help you create website you'll love.",
+      name: t("services.subtitleThree"),
+      description:t("services.textThree"),
       img: tag,
     },
     {
       id: 4,
-      name: "Social Media",
-      description:
-        "There are a lot of social platforms out there, and you should promote your presence on them on your website.",
+      name: t("services.subtitleFour"),
+      description:t("services.textFour"),
       img: like,
     },
     {
       id: 5,
-      name: "Performance",
-      description:
-        "Retaining users is crucial to improving conversions. High-performing sites engage and retain users.",
+      name: t("services.subtitleFive"),
+      description:t("services.textFive"),
       img: time,
     },
     {
       id: 6,
-      name: "SEO",
-      description:
-        "I will optimize your site with intelligent search engine optimization strategy to generate leads.",
+      name: t("services.subtitleSix"),
+      description:t("services.textSix"),
       img: ceo,
     },
   ];
@@ -76,7 +72,7 @@ function Services() {
   return (
     <section className="services" id="services">
       <div className="services__content">
-        <h2 className="title">Services</h2>
+        <h2 className="title">{t("services.title")}</h2>
         <div className="services__info">{service}</div>
       </div>
     </section>

@@ -1,0 +1,39 @@
+{
+  "navbar":{
+    "home": "Inicio",
+    "services": "Servicios",
+    "portfolio": "Portafolio"
+  },
+  "header":{
+    "title": "Soy Fabio Estevez",
+    "subtitle": "Desarrollador Full Stack"
+  },
+  "about":{
+    "title": "Sobre Mi",
+    "text": "Soy un programador apasionado por el desarrollo de software, web y diseño. He realizado proyectos en los que he plasmado mis conocimientos de código y testing de código. Estoy en búsqueda de nuevos retos y aprendiendo constantemente nuevos conocimientos."
+  },
+  "skills":{
+    "title": "Habilidades"
+  },
+  "services":{
+    "title": "Servicios",
+    "subtitleOne": "Diseño Adaptable",
+    "textOne": "Su sitio se mostrará correctamente en cualquier dispositivo, incluidas computadoras de escritorio, tabletas y teléfonos móviles.",
+    "subtitleTwo": "Diseño Creativo",
+    "textTwo": "Un buen y atractivo diseño web lo ayuda a mantener sus clientes potenciales en su sitio, que es la cara digital de su negocio.",
+    "subtitleThree": "Desarrollo",
+    "textThree": "Conozco la importancia del diseño web y puedo ayudarte a crear un sitio web que te encantará.",
+    "subtitleFour": "Redes Sociales",
+    "textFour": "Existen muchas plataformas sociales, y debe promover su presencia en ellas en su sitio web.",
+    "subtitleFive": "Rendimiento",
+    "textFive": "Retener a los usuarios es crucial para mejorar las conversiones. Los sitios de alto rendimiento atraen y retienen a los usuarios.",
+    "subtitleSix": "SEO",
+    "textSix": "Optimizaré su sitio con una estrategia inteligente de optimización de motores de búsqueda para generar clientes potenciales."
+  },
+  "portfolio":{
+    "title": "Portafolio"
+  },
+  "contact":{
+    "title": "contacto"
+  }
+}

@@ -4,16 +4,19 @@ import About from '../About/About';
 import Skills from '../Skills/Skills';
 import Cv from '../CV/Cv'
 import Contact from '../Contact/Contact';
+import {useTranslation} from 'react-i18next';
+import Configurations from '../Configurations/Configurations';
 
 function Header() {
+  const [t] = useTranslation("global");
   return (
     <header className='hero' id='home'>
       <Navbar />
       <section className='hero__container'>
         <div className='hero__home'>
           <div className='hero__texts'>
-            <h1 className='hero__title'>I'm Fabio Estevez</h1>
-            <h3 className='hero__subtitle'>Full Stack Developer</h3>
+            <h1 className='hero__title'>{t("header.title")}</h1>
+            <h3 className='hero__subtitle'>{t("header.subtitle")}</h3>
           </div>
 
           <div className="hero__info">
@@ -21,6 +24,7 @@ function Header() {
             <Skills/>
           </div>
         </div>
+        <Configurations/>
         <Cv />
         <Contact/>
       </section>
