@@ -3,6 +3,7 @@ import Navbar from '../Navbar/Navbar'
 import About from '../About/About';
 import Skills from '../Skills/Skills';
 import Cv from '../CV/Cv'
+import Contact from '../Contact/Contact';
 
 function Header() {
   return (
@@ -21,6 +22,7 @@ function Header() {
           </div>
         </div>
         <Cv />
+        <Contact/>
       </section>
       <div className="hero__wave">
         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320" className='hero__wave--svg'>

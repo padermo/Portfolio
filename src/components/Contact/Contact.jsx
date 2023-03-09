@@ -1,54 +1,50 @@
-import React, {useState, useEffect} from 'react'
-import github from '../../assets/icons/bxl-github.svg'
-import linkedin from '../../assets/icons/bxl-linkedin-square.svg'
-import email from '../../assets/icons/bx-envelope.svg'
-import whatsapp from '../../assets/icons/bxl-whatsapp.svg'
+import React, { useState } from "react";
+import github from "../../assets/icons/bxl-github.svg";
+import linkedin from "../../assets/icons/bxl-linkedin-square.svg";
+import email from "../../assets/icons/bx-envelope.svg";
+import whatsapp from "../../assets/icons/bxl-whatsapp.svg";
+import up from "../../assets/icons/bx-chevron-up.svg";
+import down from "../../assets/icons/bx-chevron-down.svg";
 
 function Contact() {
 
-  const data = [
-    {
-      id: 1,
-      img: github,
-      url: "https://github.com/padermo"
-    },
-    {
-      id: 2,
-      img: linkedin,
-      url: "https://www.linkedin.com/in/fabio-andres-estevez-herrera/"
-    },
-    {
-      id: 3,
-      img: whatsapp,
-      url: "https://api.whatsapp.com/send?phone=573193517345"
-    },
-  ];
+  const [viewData, setViewData] = useState();
+  const [viewHidde, setViewHidde] = useState("contact__hidde");
+  const [text, setText] = useState(<img src={up} alt="icon up" className="contact__icon"/>);
 
-  const [viewContact, setViewContact] = useState();
+  const handleClick = () => {
+    if(viewHidde === "contact__hidde"){
+      setViewHidde("contact__view");
+      setText(<img src={up} alt="icon up" className="contact__icon"/>);
+    }else if(viewHidde === "contact__view"){
+      setViewHidde("contact__hidde");
+      setText(<img src={down} alt="icon down" className="contact__icon"/>);
+    }
 
-  const onLoad = () => {
-    setViewContact(
-      data.map(e => (
-        <a href={e.url} key={e.id} className="contact__social" target="_blank"><img src={e.img} alt="Img contact" className='contact__icon' /></a>
-      ))
+    setViewData(
+      <div className={viewHidde}>
+        <a href="https://github.com/padermo" target='_blank' rel="noreferrer" className="contact__social">
+          <img src={github} alt="icon github" className="contact__icon" />
+        </a>
+        <a href="https://www.linkedin.com/in/fabio-andres-estevez-herrera/" target='_blank' rel="noreferrer" className="contact__social">
+          <img src={linkedin} alt="icon linkedin" className="contact__icon" />
+        </a>
+        <a href="https://wa.link/kin6ut" target='_blank' rel="noreferrer" className="contact__social">
+          <img src={whatsapp} alt="icon whatsapp" className="contact__icon" />
+        </a>
+        <a href="mailto:fabioaeh96@gmail.com" target='_blank' rel="noreferrer" className="contact__social">
+          <img src={email} alt="icon email" className="contact__icon" />
+        </a>
+      </div>
     )
   }
 
-  useEffect(()=>{
-    onLoad();
-  },[]);
-
   return (
-    <section className='contact' id='contact'>
-      <div className="contact__content container">
-        <h2 className="title title--bottom">Contact</h2>
-        <div className="contact__info">
-          {viewContact}
-          <a href="mailto:fabioaeh96@gmail.com" target="_blank" className='contact__social'><img src={email} alt="icon email" className='contact__icon' /></a>
-        </div>
-      </div>
+    <section className="contact">
+      {viewData}
+      <button className="contact__cta" onClick={handleClick}>{text}</button>
     </section>
-  )
+  );
 }
 
-export default Contact
+export default Contact;

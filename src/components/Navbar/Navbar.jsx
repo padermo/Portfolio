@@ -13,7 +13,6 @@ function Navbar() {
           <a href="#home" className='nav__link'>Home</a>
           <a href="#services" className='nav__link'>Services</a>
           <a href="#portfolio" className='nav__link'>Portfolio</a>
-          <a href="#contact" className='nav__link'>Contact</a>
         </div>
       </div>
     </nav>

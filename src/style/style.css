@@ -337,4 +337,59 @@ body {
   letter-spacing: 1px;
 }
 
+.contact {
+  width: 80px;
+  height: 390px;
+  position: fixed;
+  bottom: 10px;
+  left: 10px;
+  z-index: 3;
+}
+.contact__cta {
+  width: 70px;
+  height: 70px;
+  display: block;
+  background-color: #E7D7C6;
+  border-radius: 61% 39% 66% 34%/36% 60% 40% 64%;
+  position: fixed;
+  bottom: 10px;
+  left: 10px;
+  border: none;
+  text-align: center;
+  display: grid;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 0 0 8px #e7d7c6;
+  color: #AF5F30;
+  text-decoration: none;
+  font-size: 1.2rem;
+  z-index: 3;
+}
+.contact__view {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  opacity: 1;
+}
+.contact__hidde {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  opacity: 0;
+}
+.contact__social {
+  width: 70px;
+  height: 70px;
+  display: grid;
+  justify-content: center;
+  align-items: center;
+  background-color: #E7D7C6;
+  border-radius: 61% 39% 66% 34%/36% 60% 40% 64%;
+  box-shadow: 0 0 8px #e7d7c6;
+  text-align: center;
+}
+.contact__icon {
+  width: 30px;
+}
+
 /*# sourceMappingURL=style.css.map */
