@@ -66,3 +66,23 @@
     }
   }
 }
+
+@media (max-width: 375px) {
+  .configurations{
+    &__options{
+      width: 40px;
+      height: 40px;
+      bottom: 65px;
+    }
+
+    &__menu--view{
+      bottom: 65px;
+      right: 65px;
+      height: 40px;
+    }
+
+    &__change{
+      padding: 4px 8px;
+    }
+  }
+}
