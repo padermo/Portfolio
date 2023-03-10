@@ -34,7 +34,7 @@
     font-size: 1rem;
     cursor: pointer;
     display: flex;
-    min-width: 100px;
+    min-width: 95px;
     max-width: 110px;
     justify-content: center;
     border: 1px solid functions.color('orange-cream');
@@ -63,6 +63,17 @@
     &:hover{
       color: functions.color('cream');
       z-index: 1;
+    }
+  }
+}
+
+@media (max-width: 425px) {
+  .nav{
+    &__content{
+      justify-content: center;
+    }
+    &__picture{
+      display: none;
     }
   }
 }

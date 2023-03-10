@@ -67,7 +67,7 @@ function Services() {
 
   useEffect(() => {
     onLoad();
-  }, []);
+  }, [info]);
 
   return (
     <section className="services" id="services">

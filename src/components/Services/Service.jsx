@@ -1,6 +1,7 @@
 import React from 'react'
 
 function Service({id, img, title, paragraph}) {
+  console.log(title);
   return (
     <div className='service'>
       <figure className="service__picture">
